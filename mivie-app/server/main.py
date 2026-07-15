@@ -8,6 +8,9 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+from config import settings
+
 
 @app.get("/")
 def home():
